@@ -1,0 +1,26 @@
+#user-template(style='display: none')
+  .username {{ username }}
+
+#event-template(style='display: none')
+  .title {{ title }}
+  .about {{ about }}
+  .where {{ where }}
+    .dist {{ distance }}
+  .contact {{ who }} 
+
+ul#event-application
+
+script
+  head.ready(function() {
+    var app = new EventsApplication({username:"#{username}"});
+    var appView = new EventsApplicationView({model: app});
+
+    var eventCollection = new EventCollection( !{ JSON.stringify(events) } );
+
+    // add wishes to the app view
+    eventCollection.each( appView.addOne );
+
+  });    
+
+  
+

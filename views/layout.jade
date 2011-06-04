@@ -1,0 +1,24 @@
+!!!5
+html
+  head
+    title Oakland:PM
+    link(rel='stylesheet', href='/stylesheets/style.css')
+
+    script(src='/javascripts/headjs/dist/head.min.js')
+
+  body(role="page")
+    div(id='header', role="header") 
+
+    div(id='content', role="content")!= body
+
+    div(id='footer', role="footer")  
+
+    script
+      head.js(
+        {jquery:     "http://code.jquery.com/jquery-1.5.2.min.js"},
+        {timeago:    "/javascripts/jquery-timeago/jquery.timeago.js"},
+        {underscore: "/javascripts/underscore/underscore.js"},
+        {backbone:   "/javascripts/backbone/backbone.js"},
+        {nowjs:      "/nowjs/now.js"},
+        {models:     "/javascripts/models.js"}
+      );

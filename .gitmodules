@@ -1,0 +1,12 @@
+[submodule "public/javascripts/backbone"]
+	path = public/javascripts/backbone
+	url = git://github.com/documentcloud/backbone.git
+[submodule "public/javascripts/underscore"]
+	path = public/javascripts/underscore
+	url = git://github.com/documentcloud/underscore.git
+[submodule "public/javascripts/headjs"]
+	path = public/javascripts/headjs
+	url = git://github.com/headjs/headjs.git
+[submodule "public/javascripts/jquery-timeago"]
+	path = public/javascripts/jquery-timeago
+	url = git://github.com/rmm5t/jquery-timeago.git
