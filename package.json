@@ -1,0 +1,37 @@
+{"name": "oakland.pm",
+ "description": "Oakland Afterschool Enrichment Program Finder",
+ "version": "0.0.1",
+
+ "authors": [
+    "Jed Parsons (http://jedparsons.com)",
+    "Kristi Holohan",
+    "Sonja Totten-Harris",
+    "Telly Koosis",
+    "Christopher Yap",
+    "Dave Meyer",
+    "Aditya Pai",
+    "Raimundo Martinez",
+    "Andrew Hao (https://github.com/andrewhao)"
+ ],
+
+ "repository":
+    {"type": "git",
+     "url": "https://github.com/jedp/oakland.pm"},
+
+ "licenses": [
+    {"type": "MIT",
+     "url": "https://github.com/jedp/oakland.pm/blob/master/LICENSE"}
+ ],
+
+ "main": "app.js",
+
+ "dependencies": {
+    "backbone": "",
+    "connect: "",
+    "express: "",
+    "jade: "",
+    "mongoose: ">=1.0.0",
+    "now: ""
+ }   
+}
+
