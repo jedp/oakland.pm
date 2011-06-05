@@ -27,11 +27,11 @@
 
  "dependencies": {
     "backbone": "",
-    "connect: "",
-    "express: "",
-    "jade: "",
-    "mongoose: ">=1.0.0",
-    "now: ""
+    "connect": "",
+    "express": "",
+    "jade": "",
+    "mongoose": ">=1.0.0",
+    "now": ""
  }   
 }
 
