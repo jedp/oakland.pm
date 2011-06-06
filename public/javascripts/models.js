@@ -45,7 +45,7 @@ var EventsApplication = Backbone.Model.extend({
 var EventsApplicationView = Backbone.View.extend({
   model: EventsApplication, 
 
-  el: $('#events-application'),
+  el: $('#application'),
 
   initialize: function() {
     _.bindAll(this, 'addOne', 'render');
