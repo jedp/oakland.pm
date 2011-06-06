@@ -69,6 +69,11 @@ body {
   border-radius: 4px;    
 }
 
+h4 {
+  font-weight: bold;
+  padding: 4px 0px;
+}
+
 li {
   margin-right: 12px;
   padding: 4px 8px;
