@@ -2,13 +2,17 @@
   .username {{ username }}
 
 #event-template(style='display: none')
+  h4 Title
   .title {{ title }}
+  h4 About
   .about {{ about }}
+  h4 Where
   .where {{ where }}
     .dist {{ distance }}
+  h4 Contact
   .contact {{ who }} 
 
-ul#event-application
+ul#application
 
 script
   head.ready(function() {
