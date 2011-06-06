@@ -9,9 +9,7 @@ var app = module.exports = express.createServer();
 var nowjs = require('now');
 
 var everyone = nowjs.initialize(app);
-
-var events = require('./models').events;
-var user = require('./models').user;
+var models = require('./models');
 
 // Configuration
 
@@ -39,21 +37,29 @@ app.get('/', function(req, res) {
 });
 
 app.get('/feed', function(req, res) {
-  res.render('feed', {
-    locals: {
-              events: events,
-              username: user.username
-            }
-  });
+  models.Program.find({})
+    .limit(20)
+    .execFind(function(err, events) {
+      res.render('feed', {
+        locals: {
+                  events: events,
+                  username: "Loretta"
+                }
+      });
+    });
 });
 
 app.get('/event/:id', function(req, res) {
-  var event = events[0];
-  res.render('event', {
-    locals: {
-              events: [event],
-              username: user.username
-            }
+  models.Program.findOne({_id: req.params.id})
+    .execFind(function(err, events) {
+      console.log("find: " + err);
+      console.log(events);
+      res.render('event', {
+        locals: {
+                  events: [events[0]],
+                  username: "Loretta"
+                }
+      });
   });
 });
 

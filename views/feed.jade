@@ -2,12 +2,13 @@
   .username {{ username }}
 
 #event-template(style='display: none')
-  .title {{ title }}
-  .info
-    span.date  {{ date }}
-    span.distance {{ distance }}
-    span.attending {{ attending.length }}
-    span.subscribe
+  a(href='/event/{{ _id }}')
+    .title {{ name }}
+    .info
+      span.date 1 day
+      span.distance 1.6 mi
+      span.attending {{ attending.length }}
+      span.subscribe
 
 ul#application
 

@@ -14,16 +14,8 @@ var EventView = Backbone.View.extend({
 
   template: _.template( $('#event-template').html() ),
 
-  events: {
-    'click': 'showEvent'
-  },
-
   initialize: function() {
     _.bindAll(this, 'render');
-  },
-
-  showEvent: function() {
-    location.replace("/event/" + this.model.get('id'));
   },
 
   render: function() {

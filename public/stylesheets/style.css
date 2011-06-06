@@ -69,6 +69,10 @@ body {
   border-radius: 4px;    
 }
 
+a.event {
+  text-decoration: none;
+}
+
 h4 {
   font-weight: bold;
   padding: 4px 0px;
