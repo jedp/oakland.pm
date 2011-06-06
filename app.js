@@ -52,8 +52,6 @@ app.get('/feed', function(req, res) {
 app.get('/event/:id', function(req, res) {
   models.Program.findOne({_id: req.params.id})
     .execFind(function(err, events) {
-      console.log("find: " + err);
-      console.log(events);
       res.render('event', {
         locals: {
                   events: [events[0]],

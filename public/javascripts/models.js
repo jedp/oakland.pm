@@ -3,7 +3,11 @@ _.templateSettings = {
   interpolate : /\{\{(.+?)\}\}/g
 };
 
-var Event = Backbone.Model.extend({});
+var Event = Backbone.Model.extend({
+  defaults: {
+              description: "", 
+            }
+});
 
 var EventView = Backbone.View.extend({
   model: Event,
